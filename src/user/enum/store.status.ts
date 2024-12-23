@@ -1,0 +1,8 @@
+export enum StoreStatus {
+  UNVERIFIED = 0,
+  APPROVED = 1,
+  VERIFIED = 2,
+  REJECTED = 3,
+  INFO_VERIFIED = 4,
+  VERIFICATION_FAILED = 5,
+}

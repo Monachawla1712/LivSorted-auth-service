@@ -1,0 +1,60 @@
+import { StoreStatus } from '../../user/enum/store.status';
+
+export class StoreMetadata {
+  amenities: string[];
+  locationCaptureAccuracy: number;
+  gstNumber: string;
+  panNumber: string;
+  journeyStartTime: string;
+}
+export class StoreListResponse {
+  id: string;
+  store_id: string;
+  name: string;
+  ownerId: string;
+  ownerName: string;
+  isActive: boolean;
+  location: any;
+  boundry: string;
+  isBounded: boolean;
+  addressLine_1: string;
+  addressLine_2: string | null;
+  landmark: string | null;
+  city: string;
+  state: string;
+  pincode: number;
+  is_open: boolean;
+  contactNumber: string | null;
+  upiId: string | null;
+  min_eta: number;
+  max_eta: number;
+  lithos_ref: number;
+  createdAt: Date;
+  updatedAt: Date;
+  updatedBy: string;
+  open_time: string | null;
+  close_time: string | null;
+  store_type: string;
+  status: StoreStatus;
+  isDeliveryEnabled: number;
+  images: any;
+  metadata: StoreMetadata;
+  offerImages: object;
+  pocName: string;
+  pocContactNo: string;
+  collectCash: boolean;
+  isUnloadingReqd: boolean;
+  storeCategory: string;
+  easebuzzVirtualAccountId: number;
+  easebuzzQrCode: string;
+  createdBy: string;
+  approvedBy: string;
+  storeImages: object;
+  storeVideos: object;
+  deliveryOpenTime: string | null;
+  storeLocationType: string;
+  storeDeliveryType: string;
+  inventoryView: any;
+  storeSubtype: string;
+  salesPotential: number;
+}
